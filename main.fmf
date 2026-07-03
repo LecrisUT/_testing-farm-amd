@@ -1,0 +1,17 @@
+discover:
+  how: shell
+  tests:
+    - name: /tree-dev
+      test: tree /dev
+provision:
+  how: container
+  expose-device:
+    # - /dev/dri/card0
+    - /dev/dri/card1
+    # - /dev/dri/card2
+prepare:
+  how: install
+  package:
+    - tree
+execute:
+  how: tmt
