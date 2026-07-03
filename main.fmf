@@ -3,6 +3,10 @@ discover:
   tests:
     - name: /tree-dev
       test: tree /dev
+    - name: /rocminfo
+      test: rocminfo
+    - name: /rocm-clinfo
+      test: rocm-clinfo
 provision:
   how: container
   expose-device:
@@ -13,5 +17,6 @@ prepare:
   how: install
   package:
     - tree
+    - rocm
 execute:
   how: tmt
