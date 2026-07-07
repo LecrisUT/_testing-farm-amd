@@ -13,6 +13,7 @@ provision:
     # - /dev/dri/card0
     - /dev/dri/card1
     # - /dev/dri/card2
+    - /dev/kfd
 prepare:
   how: install
   package:
