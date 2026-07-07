@@ -11,8 +11,9 @@ provision:
   how: container
   expose-device:
     # - /dev/dri/card0
-    - /dev/dri/card1
+    # - /dev/dri/card1
     # - /dev/dri/card2
+    - /dev/dri
     - /dev/kfd
 prepare:
   how: install
